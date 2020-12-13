@@ -8,3 +8,6 @@ applications
 example-one
 example-two
 final-words
+my-file
+r-markdown
+including-plots
