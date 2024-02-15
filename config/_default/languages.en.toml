@@ -1,25 +1,25 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "UCKN Blog"
+title = "Blowfish"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/profile_pic_letters.png"
-  # secondaryLogo = "img/profile_pic_check.png"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-[author]
-  name = "UCKN Stsff"
-  image = "img/profile_pic_check.png"
-  headline = "I'm only human"
-  bio = "A little bit about you"
-  links = [
-    { email = "mailto:hello@your_domain.com" }
+# [author]
+#   name = "Your name here"
+#   image = "img/blowfish_logo.png"
+#   headline = "I'm only human"
+#   bio = "A little bit about you"
+#   links = [
+#     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -63,4 +63,4 @@ title = "UCKN Blog"
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
-  ]
+#   ]
