@@ -1,22 +1,16 @@
 ---
-title: "Highest level content - Six Count"
-description: "Six count ... blah blah blah."
+title: "Blogophonic"
+subtitle: "A Hugo Theme by Formspree"
+description: "Not all themes are created equal. With Blogophonic we set out to create a clean theme with the right features for a serious blog. We also wanted Blogophonic to be a pleasure to modify, so we built it with Tachyons, CSS Grid and packed it full of configurable options."
+date: 2019-02-18T12:27:33-06:00
+images:
+  - img/unicorn-megaphone.png
+show_action_link: true
+action_link: /about
+action_label: "Read More &rarr;"
+action_type: text # text, button
+type: home
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam odio, mattis id ante at, auctor feugiat nisi. Sed maximus scelerisque dignissim. Curabitur vel nisl augue. Vestibulum pretium erat a dignissim tempor. Aenean dapibus mi pellentesque faucibus fringilla. Aenean in gravida est, ut imperdiet est. Maecenas et enim condimentum ex interdum vulputate ut nec lectus. Vestibulum id libero consequat, vestibulum purus vitae, malesuada risus. Praesent justo ante, mattis id enim ut, pretium tempor lectus. In nec augue augue. Vivamus quam enim, elementum nec ultrices sit amet, tempus at urna. Integer posuere tortor vel nulla venenatis, ac condimentum leo rhoncus. Quisque finibus dapibus orci. Aliquam erat volutpat.
 
-![My Image](img/my_picture.png)
-
-Nunc et ullamcorper orci. Sed suscipit aliquam luctus. Nullam consectetur sem ac dui egestas condimentum. Integer in nisl ut tellus scelerisque feugiat. In ut luctus magna, at suscipit libero. Aenean semper convallis varius. Sed malesuada sit amet mi in auctor. 
-
-{{< figure
-    src="img/my_picture.png"
-    alt="Abstract purple artwork"
-    caption="Photo by [Jr Korpa](https://unsplash.com/@jrkorpa) on [Unsplash](https://unsplash.com/)"
-    >}}
-
-<!-- OR -->
-
-![Abstract purple artwork](img/my_picture.png "Photo by [Jr Korpa](https://unsplash.com/@jrkorpa) on [Unsplash](https://unsplash.com/)")
-
-Suspendisse non sodales diam. Sed vel tellus vel mi semper rhoncus. Vestibulum tellus nisl, tincidunt eu maximus a, interdum sed orci. Ut consequat urna ut porta ultrices. Pellentesque a nisi ut diam auctor volutpat ut et elit. Quisque eu porta metus, a posuere metus. In et iaculis erat, ac semper ipsum. Aliquam hendrerit luctus ipsum, at sagittis orci dapibus quis. Suspendisse potenti.
-
+** index doesn't contain a body, just front matter above.
+See index.html in the layouts folder **
