@@ -1,7 +1,20 @@
 ---
-title: "Blogophonic"
-subtitle: "A Hugo Theme by Formspree"
-description: "Not all themes are created equal. With Blogophonic we set out to create a clean theme with the right features for a serious blog. We also wanted Blogophonic to be a pleasure to modify, so we built it with Tachyons, CSS Grid and packed it full of configurable options."
+title: "Welcome to the UCKN Social Network"
+subtitle: "An online community founded by two old extroverts."
+description: "In the whirlwind of our daily lives, it’s easy to let meaningful connections slip through our fingers. The UCKN Social Network is here to change that. It’s a unique space designed for you and your group(s) to make checking in with one another an effortless part of your day. Every day.
+                  
+With just a simple daily check-in, the UCKN Social Network helps keep members connected in groups defined by its members. It’s about ensuring that, despite the rush of life, there’s always a moment to connect with those who matter. Here, it's the little updates, the daily "here's what I'm up to" that keeps everyone in your chosen groups in the loop and connected.
+
+It’s not about replacing phone calls or dinners out -- it’s about adding a thin layer of connection to your day, no matter how small, to remind us that we’re part of a community.
+
+Please join our members on the UCKN Social Network in making daily connections a reality. It’s just a click away.
+
+Visit UCKN on the Apple Store today.
+                  
+Warmest regards,
+The UCKN Editorial Team
+
+Want to learn more about the impact of daily connections? Visit blog above at https://UCKN.net/blog for insights on how simple check-ins can enrich our social fabric."
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/unicorn-megaphone.png
