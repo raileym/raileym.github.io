@@ -3,15 +3,19 @@ title: "About"
 description: A blog template for Hugo developed by Formspree and available for free.
 date: 2019-02-19T14:47:22-06:00
 draft: false
-layout: blog
+feature:
+  image: "/about/assets/transistor-sign-up.png"
+  class: "tc w-80"
+feature_class: "tc"
+layout: single-updated
 show_title_as_headline: false
 ---
 
 ### I've never met a stranger.
 
-My cousin and I founded the **UCKN Social Network**. I am a retired computer scientist, while he is a real estate broker.
+My cousin and I founded the **UCKN Social Network**. I am a retired computer scientist, my cousin is a real estate broker.
 
-We are both extroverts &#8212; staying social has never been a problem for either of us. In my case, I have never met a stranger &#8212; I could hold an in-depth conversation with a random person at a bus stop when I am not even taking the bus.
+We are both extroverts &#8212; staying social has never been our problem. In my case, I've never met a stranger &#8212; I could hold an in-depth conversation with a complete stranger.
 
 My cousin, on the other hand, is constantly collecting stray cats in the form of single friends, who find themselves forlorn come every holiday. He is quite sympathetic, and regularly hosts a party or two for the single cats he meets.
 

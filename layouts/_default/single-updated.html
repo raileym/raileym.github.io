@@ -3,9 +3,9 @@
   <section class="page-content mw7 center">
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
-        <div class="center tr w-50-l">
-          {{ with .Params.images }}
-            {{ range first 1 . }}<img class="center mv0 w-70-mXXX" src="{{ . }}"/>{{ end }}
+        <div class="tc">
+          {{ with .Params.feature }}
+            <img class="{{ .class }}" src="{{ .image }}"/>
           {{ end }}
         </div>    
         <h1 class="f1 lh-solid measure-narrow mb3">{{ .Title }}</h1>
