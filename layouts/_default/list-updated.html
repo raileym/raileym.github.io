@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="page-main pa4" role="main">
   <section class="blog-intro mw7 center mb5">
-    <div class="center tr w-50-l">
+    <div class="tc w-50-l">
       {{ with .Params.images }}
         {{ range first 1 . }}<img class="center mv0 w-70-mXXX" src="{{ . }}"/>{{ end }}
       {{ end }}
