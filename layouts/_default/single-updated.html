@@ -4,7 +4,7 @@
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
         <div class="center tr w-50-l">
-          {{ with .Params.feature }}
+          {{ with .Params.images }}
             {{ range first 1 . }}<img class="center mv0 w-70-mXXX" src="{{ . }}"/>{{ end }}
           {{ end }}
         </div>    
@@ -15,22 +15,18 @@
       </header>
       <section class="post-body pt5 pb4">
         {{ .Content }}
+        {{ .Scratch.Set "details" "closed" }}
+        {{ partial "shared/post-details.html" . }}
       </section>
       <footer class="post-footer">
         {{ partial "shared/post-pagination.html" . }}
       </footer>
     </article>
     {{ if .CurrentSection.Params.show_disqus_comments }}
-    <div class="post-comments pa0 pa4-l mt5">
+    <div class="post-comments pa0 pa4-l mt4">
       {{ template "_internal/disqus.html" . }}
     </div>
     {{ end }}
   </section>
 </main>
-<aside class="page-sidebar" role="complementary">
-  {{ .Scratch.Set "sidebar" .Site.Data.sidebar_content.blog.single_sidebar }}
-  {{ partial "shared/sidebar-content.html" . }}
-  {{ .Scratch.Set "details" "open" }}
-  {{ partial "shared/post-details.html" . }}
-</aside>
 {{ end }}

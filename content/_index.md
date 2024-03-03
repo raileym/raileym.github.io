@@ -17,11 +17,11 @@ description: >
   Visit UCKN on the Apple Store today.
 
 
-  Want to learn more about the impact of daily connections? Visit blog above at https://UCKN.net/blog for insights on how simple check-ins can enrich our social fabric.  
+  Want to learn more about the impact of daily connections? Visit our blog above at https://UCKN.net/blog for insights on how simple check-ins can enrich our social fabric every day.  
 date: 2019-02-18T12:27:33-06:00
 images:
-  - img/unicorn-megaphone.png
-show_action_link: true
+  - img/transistor-boy-and-girl-drawing-at-the-childrens-table.png
+show_action_link: false
 action_link: /about
 action_label: "Read More &rarr;"
 action_type: text # text, button
