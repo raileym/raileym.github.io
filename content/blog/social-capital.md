@@ -20,6 +20,10 @@ layout: single-sidebar
 
 When we spend time and share conversations with our friends and family, we are creating what psychologists call, **social capital**.
 
+The roots of social capital date back to John Dewey's 1899 proposal that the University Elementary School elementary schools serve as a template for future students where the school becomes a social center. 
+
+proposed concept of social roots that date back to the early
+
 Social capital is the product from building relationships with others. When you hear the question, should I invest time in this relationship, the underlying premise is the question, should you build social captial from this relationship.
 
 Psychologists list the positive aspects of a relationship as trust, comfort, and expectations.
@@ -36,8 +40,15 @@ School peers and formats also offer children to opportunity to learn how to crea
 
 Over time, as we age we tend to focus on our work groups and profession, casual peer groups are harder to maintain. Social capital through work appears more transactional and not steadfast.
 
+When you first move to a new town or city, where do you start your social network?
 
+(Nahapiet and Ghoshal, 1998)
+(Nahapiet and Ghoshal, 1998)
+(Nahapiet and Ghoshal, 1998)
+(Nahapiet and Ghoshal, 1998)
 
 ### References
+
+Nahapiet, J., & Ghoshal, S. (1998). Social Capital, Intellectual Capital, and the Organizational Advantage. The Academy of Management Review, 23(2), 242–266. https://doi.org/10.2307/259373
 
 Ostrom, E. (2009). What is social capital. Social capital: Reaching out, reaching in, 17-38.
