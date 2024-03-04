@@ -9,19 +9,18 @@ description: >
   The UCKN Social Network is a unique space designed for you and your groups to make checking in with one another an effortless part of your day. Every day.
 
 
-  With just a simple **daily check-in**, the UCKN Social Network helps members stay connected with those who matter most. 
+  With just one **click-a-day**, the UCKN Social Network helps members connect with those who matter most. 
   
   
-  It’s not about replacing phone calls or dinners out -- it’s about adding a thin layer of social connectedness to your day, no matter how small, to remind us that we’re part of a community.
+  Please join us on The UCKN Social Network in making daily connections a reality. Our Social Network is just one click away.
 
 
-  Please join our members on The UCKN Social Network in making daily connections a reality. Our Social Network is just a click away.
+  {{< figure src="/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="An example image" caption="UCKN Social Network" >}}
 
 
-  Visit The UCKN Social Network on the Apple Store today.
+  Visit [our blog](https://UCKN.net/blog) for insights on how simple check-ins can enrich our social fabric every day.
 
 
-  Want to learn more about the impact of daily connections? Visit [our blog](https://UCKN.net/blog) above for insights on how simple check-ins can enrich our social fabric every day.  
 date: 2019-02-18T12:27:33-06:00
 feature:
   - img/transistor-boy-and-girl-drawing-at-the-childrens-table.png

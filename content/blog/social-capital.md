@@ -22,7 +22,11 @@ layout: single-sidebar
 
 When we spend time and share conversations with our friends and family, we are creating what psychologists call, **social capital**.
 
-When we spend time and share conversations with our friends and family, we are building **social capital** from our relationships.
+This is a paragraph with a custom class applied to it.{.my-custom-class}
+
+When we spend time and share conversations with our friends and family, we are building **social capital** from our relationships.{.bg-red}
+
+![xxx](/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg){.ba .bw5}
 
 The roots of social capital date back to John Dewey's 1899 proposal that the University Elementary School elementary schools serve as a template for future students where the school becomes a social center. 
 
