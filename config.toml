@@ -17,8 +17,8 @@ paginate = 3
 preserveTaxonomyNames = true
 
 [params]
-  orgName = "Formspree"
-  orgLocal = "Brooklyn, NY"
+  orgName = "The UCKN Social Network"
+  orgLocal = "Orlando, FL"
   favicon = "/img/favicon.ico?v=0"
   logo = "/img/logo-v5.png"
   # logo = "/img/blogophonic-mark-dark.png"
