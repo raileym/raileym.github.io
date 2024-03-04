@@ -1,7 +1,7 @@
 ---
-title: A Blog That's Real
-description: "This is a fully featured blog that supports categories, tags, series, and pagination."
-author: The Team at Formspree
+title: Social Connectedness
+description: "Research in social science strongly suggests the importance of Social Connected ness to our good health and well-begin."
+author: The UCKN Editorial Staff
 images:
   - /blog/assets/transistor-man-and-woman-sitting-around-a-campfire.png
 date: 2019-02-20T09:31:27-06:00
@@ -11,6 +11,5 @@ show_post_thumbnail: true
 show_author_byline: true
 show_post_date: true
 show_disqus_comments: false # see disqusShortname in site config
+show_title_as_headline: true
 ---
-
-** No content for the blog index. This file provides front matter for the blog including the layout and boolean options. **

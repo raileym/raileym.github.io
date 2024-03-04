@@ -1,19 +1,26 @@
 {{ define "main" }}
 <main class="page-main pa4" role="main">
   <section class="page-content mw9 center">
-    <div class="flex-l items-center">
-      <div class="mh5-l w-50-l">
-        {{ with .Params.title }}<h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">{{ . }}</h1>{{ end }}
-        {{ with .Params.subtitle }}<h2 class="f7 fw7 measure mv0 ttu tracked">{{ . }}</h2>{{ end }}
-        {{ with .Params.description }}<p class="f4 measure mv4 lh-copy black-50">{{ . | markdownify }}</p>{{ end }}
+    <div class="flex-lXXX items-center">
+      <div class="baXXX center w-80 mh5-lXXX w-50-lXXX">
+        <div class="tc">
+          {{ with .Params.feature }}
+            {{ range first 1 . }}<img class="mv0 w-60 w-70-mXXX" src="{{ . }}"/>{{ end }}
+          {{ end }}
+        </div>
+        {{ with .Params.title }}<h1 class="tc f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">{{ . | safeHTML }}</h1>{{ end }}
+        {{ with .Params.subtitle }}<h2 class="tc f7 fw7 measureXXX mv0 ttu tracked">{{ . }}</h2>{{ end }}
+        {{ with .Params.description }}<div class="f4 measureXXX mv4 lh-copy black-50">{{ . | markdownify }}</div>{{ end }}
         {{ if .Params.show_action_link }}<a class="action {{ .Params.action_type }}" href="{{ .Params.action_link }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
       </div>
-      <div class="tc w-50-l">
-      {{ with .Params.images }}
-        {{ range first 1 . }}<img class="mv0 w-70-m" src="{{ . }}"/>{{ end }}
-      {{ end }}
-      </div>
+<!--
+  <div class="tc w-50-l">
+    {{ with .Params.images }}
+      {{ range first 1 . }}<img class="mv0 w-70-m" src="{{ . }}"/>{{ end }}
+    {{ end }}
     </div>
+  </div>
+-->      
   </section>
 </main>
 {{ end }}

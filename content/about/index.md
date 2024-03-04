@@ -7,25 +7,27 @@ feature:
   image: "/about/assets/transistor-sign-up.png"
   class: "tc w-80"
 feature_class: "tc"
-layout: single-updated
-show_title_as_headline: false
+show_title_as_headline: true
+layout: standard
 ---
 
 ### I've never met a stranger.
 
-My cousin and I founded the **UCKN Social Network**. I am a retired computer scientist, my cousin is a real estate broker.
+My cousin and I founded **The UCKN Social Network**. I am a retired computer scientist, while my cousin is a real estate broker.
 
-We are both extroverts &#8212; staying social has never been our problem. In my case, I've never met a stranger &#8212; I could hold an in-depth conversation with a complete stranger.
+We are both extroverts &#8212; staying social has never been our problem. In my case, I've never met a stranger &#8212; I could hold an in-depth conversation with a park bench.
 
-My cousin, on the other hand, is constantly collecting stray cats in the form of single friends, who find themselves forlorn come every holiday. He is quite sympathetic, and regularly hosts a party or two for the single cats he meets.
+My cousin is forever the host, always collecting stray friends, who sometimes find themselves forlorn. 
 
 ### 'No one checks up on me.'
 
-Last year, a good friend &#8212; single &#8212; approached my cousin, confessing, 'No one checks up on me, not my adult kids, not my friends. I live alone and I am worried. Is there a technology that I can use on my phone to check in with others daily?'
+Last year, a good friend &#8212; single &#8212; approached my cousin, confessing, 'No one checks up on me, not my adult kids, not my friends. I live alone and I am concerned. Is there a technology that I can use on my phone to check in with others daily?'
 
 Months later, my cousin asked me the same question, 'Is there such a technology?' 
 
-'Sure, there is a lot of technology out there, but it's mostly quite invasive,' I noted. 'Let's talk more about your friend's question.'
+'Sure, there is a lot of technology out there, but it's mostly quite invasive,' I'd say. 'Let's talk more about your friend's question.'
+
+Less than a year later, we founded **The UCKN Social Network** as our response to this person's concern. Our goal, at the very least, is to use technology to create social connectedness among our friends, whether we know them or not.
 
 ### Surgeon General's National Advisory on loneliness epidemic
 
