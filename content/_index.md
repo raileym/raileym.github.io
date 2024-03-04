@@ -1,9 +1,9 @@
 ---
 title: >
-  The UCKN<br/>Social Network
+  UCKN Social Network
 subtitle: "An online community founded by two old extroverts"
 description: >
-  In the whirlwind of our daily lives, it’s easy to let meaningful connections slip through our fingers. The UCKN Social Network is here to change that. 
+  In the whirlwind of our daily lives, it’s easy to let meaningful connections slip through our fingers. The UCKN ( pronounced, U-Check-N) Social Network is here to change that. 
   
   
   The UCKN Social Network is a unique space designed for you and your groups to make checking in with one another an effortless part of your day. Every day.

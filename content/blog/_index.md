@@ -1,6 +1,6 @@
 ---
 title: Social Connectedness
-description: "Research in social science strongly suggests the importance of Social Connected ness to our good health and well-begin."
+description: "Research in social science strongly suggests social connectedness is key to our good health and well-being."
 author: The UCKN Editorial Staff
 images:
   - /blog/assets/transistor-man-and-woman-sitting-around-a-campfire.png
