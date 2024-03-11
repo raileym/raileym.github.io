@@ -12,7 +12,7 @@ description: >
   With just one **click-a-day**, the UCKN Social Network helps members connect with those who matter most. 
   
   
-  Please join us on The UCKN Social Network in making daily connections a reality. Our Social Network is just one click away.
+  Please join us on the UCKN Social Network in making daily connections a reality. Our Social Network is just one click away.
 
 
   {{< figure src="/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="An example image" caption="UCKN Social Network" >}}
