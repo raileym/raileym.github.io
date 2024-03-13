@@ -61,3 +61,8 @@ preserveTaxonomyNames = true
   category = "categories"
   series = "series"
   tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

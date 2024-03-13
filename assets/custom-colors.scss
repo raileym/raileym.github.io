@@ -16,6 +16,7 @@ $buttonBgColorCustom: #0F0906;
 $buttonHoverBgColorCustom: #103742;
 $borderColorCustom: #C4BEB9;
 
+
 // ------------------------------
 // DO NOT EDIT BELOW THIS LINE
 
@@ -52,3 +53,16 @@ $buttonHoverTextColor: custom-button-hover-text-color;
 $buttonBgColor: custom-button-bg-color;
 $buttonHoverBgColor: custom-button-hover-bg-color;
 $borderColor: custom-border-color;
+
+// SCSS Variables
+$faintBlue: #E6F7FF;
+$faintGreen: #E6F4EA;
+$faintYellow: #FFF9E6;
+$faintRed: #FFE6E6;
+
+// Custom Classes
+.faint-blue { background-color: $faintBlue; }
+.faint-green { background-color: $faintGreen; }
+.faint-yellow { background-color: $faintYellow; }
+.faint-red { background-color: $faintRed; }
+

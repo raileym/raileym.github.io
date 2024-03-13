@@ -1,0 +1,15 @@
+<!-- layouts/shortcodes/customBlock.html -->
+<style>
+  .custom-block {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* White text color */
+    /* Use a default background color that can be overridden by a Tachyons class */
+    background-color: #007bff; /* Bootstrap primary blue for example */
+  }
+</style>
+
+<div class="custom-block bg-{{ .Get "color" }} ph4 pv3 lh-copy br3">
+  {{ .Inner | markdownify }}
+</div>
