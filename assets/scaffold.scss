@@ -235,6 +235,15 @@ form {
   }
 }
 
+.single-sidebar-feature {
+  .page-main {
+    grid-column: 1 / 5;
+  }
+  .page-sidebar {
+    grid-column: 5 / 7;
+  }
+}
+
 // SCAFFOLD MEDIA QUERY
 @media screen and (max-width: 768px) {
   .site-header {

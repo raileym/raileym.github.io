@@ -8,6 +8,9 @@ header:
   - name: Blog
     title: Blog
     url: /blog/
+  - name: Merchandise
+    title: Merchandise
+    url: /merchandise/
   # - name: Contact
   #   title: Contact Form
   #   url: /contact/

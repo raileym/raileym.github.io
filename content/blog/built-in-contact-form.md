@@ -13,7 +13,7 @@ series:
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - Emotions
 layout: single
 ---
 

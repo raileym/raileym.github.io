@@ -3,7 +3,7 @@ title: "Social Capital"
 subtitle: ""
 excerpt: "When we spend time and share conversations with our friends and family, we are creating what psychologists call, social capital."
 date: 2024-02-22
-author: "Malcolm Railey"
+author: "UCKN Editorial Staff"
 draft: false
 images:
 - /blog/assets/brooke-cagle-unsplash-thumbnail.png
@@ -15,7 +15,7 @@ series:
 tags:
 - hugo-site
 categories:
-- Theme Features
+- Emotions
 # layout options: single or single-sidebar
 layout: single-sidebar
 ---
