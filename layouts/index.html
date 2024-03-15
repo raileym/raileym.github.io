@@ -61,12 +61,7 @@
 <div id="splashScreen2" class="splash vh-100 vw-100 flex items-center justify-center bg-black white">
   <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa4" style="height: 2rem; width: auto;" src="/img/logo-v7.png" /></div>
   <div class="tc">
-    <div class="f1 fw4 mb5 mh5">
-      <div class="mv5 f-subheadline-white">It's important.</div>
-      <div class="mv5">Loneliness is<br/>a national epidemic: </div>
-      <div class="mv5 yellow center w-70">As many as 2 out 5 older adults have reported moderate to severe loneliness.</div>
-      <div class="mv5">Check-in with<br/>someone today.</div>
-    </div>
+    <div id="followUp" class="f1 fw4 mb5 mh5"></div>
     <a href="#" class="f5 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" onclick="hideSplashScreens()">Click for more information</a>
   </div>
 </div>
@@ -74,27 +69,69 @@
 <!-- First Splash Screen -->
 <div id="splashScreen1" class="splash vh-100 vw-100 flex items-center justify-center bg-white white">
   <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa4" style="height: 2rem; width: auto;" src="/img/logo-v8.png" /></div>
-  <div class="tc">
-    <h2 class="f-subheadline-blue fw6">Did<br />you check-in<br/>with your parents<br \/>today?</h2>
-  </div>  
+  <div id="question" class="tc"></div>  
 </div>  
 
 <script>
+const splashContent = [
+  {
+    question: `<h2 class="f-subheadline-blue fw6">Did<br />you check-in<br/>with your parents<br />today?</h2>`,
+    followUp: `<div class="mv5 f-subheadline-white">It's important.</div>
+               <div class="mv5">Loneliness is<br/>a national epidemic. </div>
+               <div class="mv5 yellow center w-70">As many as 2 out 5 older adults have reported moderate to severe loneliness.</div>
+               <div class="mv5">Check-in with<br/>someone today.</div>`
+  },
+  {
+    question: `<h2 class="f-subheadline-blue fw6">Have you spoken<br/>to an old friend recently?</h2>`,
+    followUp: `<div class="mv5 f-subheadline-white">It's important.</div>
+               <div class="mv5">Loneliness is<br/>a national epidemic. </div>
+               <div class="mv5 yellow center w-70">Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated.</div>
+               <div class="mv5">Reconnect today.</div>`
+  },
+  {
+    question: `<h2 class="f-subheadline-blue fw6">When was the last time<br/> you shared a meal<br/>with someone?</h2>`,
+    followUp: `<div class="mv5 f-subheadline-white">It's important.</div>
+               <div class="mv5">Loneliness is<br/>a national epidemic. </div>
+               <div class="mv5 yellow center w-70">Sharing moments matters. Social isolation can increase the risk of premature death.</div>
+               <div class="mv5">Share a meal today.</div>`
+  },
+  {
+    question: `<h2 class="f-subheadline-blue fw6">Do you remember<br/>the last story you heard<br/>from a grandparent?</h2>`,
+    followUp: `<div class="mv5 f-subheadline-white">It's important.</div>
+               <div class="mv5">Loneliness is<br/>a national epidemic. </div>
+               <div class="mv5 yellow center w-70">Every story matters. Engaging with older adults reduces their risk of dementia.</div>
+               <div class="mv5">Share a story today.</div>`
+  },
+  {
+    question: `<h2 class="f-subheadline-blue fw6">Have you asked<br/>someone about their<br/>day today?</h2>`,
+    followUp: `<div class="mv5 f-subheadline-white">It's important.</div>
+               <div class="mv5">Loneliness is<br/>a national epidemic. </div>
+               <div class="mv5 yellow center w-70">Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease.</div>
+               <div class="mv5">Ask a question today.</div>`
+  },
+  // Add more pairs as needed
+];
+
 // document.addEventListener('DOMContentLoaded', function() {
 //   const questions = [
-//     "Did<br />you check-in<br/>with your parents<br \/>today?",
-//     "Have you spoken<br/>to an old friend recently?",
+//     `<h2 class="f-subheadline-blue fw6">Did<br />you check-in<br/>with your parents<br />today?</h2>`
+//     // "Did<br />you check-in<br/>with your parents<br />today?",
+//     // "Have you spoken<br/>to an old friend recently?",
 //     // "When was the last time you shared a meal with someone?",
 //     // "Do you remember the last story you heard from a grandparent?",
 //     // "Have you asked someone about their day today?"
 //   ];
 
 //   const followUps = [
-//     "It's important. <br/><br/>Loneliness is a national epidemic: As many as 2 out 5 older adults have reported moderate to severe loneliness. <br/><br/>Check-in with someone today.",
-//     "Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated.<br/><br/>Reconnect today.",
-//     "Sharing moments matters. Social isolation can increase the risk of premature death.",
-//     "Every story matters. Engaging with older adults reduces the risk of dementia for them.",
-//     "Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease."
+//     `<div class="mv5 f-subheadline-white">It's important.</div>
+//       <div class="mv5">Loneliness is<br/>a national epidemic: </div>
+//       <div class="mv5 yellow center w-70">As many as 2 out 5 older adults have reported moderate to severe loneliness.</div>
+//       <div class="mv5">Check-in with<br/>someone today.</div>`
+//     // "It's important. <br/><br/>Loneliness is a national epidemic: As many as 2 out 5 older adults have reported moderate to severe loneliness. <br/><br/>Check-in with someone today.",
+//     // "Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated.<br/><br/>Reconnect today.",
+//     // "Sharing moments matters. Social isolation can increase the risk of premature death.",
+//     // "Every story matters. Engaging with older adults reduces their risk of dementia.",
+//     // "Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease."
 //   ];
 
 //   let currentIndex = Math.floor(Math.random() * questions.length);
@@ -110,6 +147,14 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  // Select a random pair
+  let currentIndex = Math.floor(Math.random() * splashContent.length);
+  const content = splashContent[currentIndex];
+
+  // Display the selected pair
+  document.getElementById('question').innerHTML = content.question;
+  document.getElementById('followUp').innerHTML = content.followUp;
+
   setTimeout(() => {
     // Step 2: Fade out splashScreen1 at 6 seconds
     document.getElementById('splashScreen1').classList.add('hidden');
