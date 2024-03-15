@@ -3,7 +3,8 @@ title: >
   UCKN Social Network
 subtitle: "An online community founded by two old extroverts"
 description: >
-  The UCKN Social Network is an organization that promotes social connectedness among our families, friends, and communities for our better well-being and good health.
+  The UCKN Social Network is an organization that promotes social connectedness between our families, friends, and community for our better well-being and good health.
+
   
   In the whirlwind of our daily lives, it’s easy to let meaningful connections slip through our fingers. The UCKN ( pronounced, You-Check-In) Social Network is here to change that. 
   

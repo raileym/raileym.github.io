@@ -43,7 +43,7 @@ Loneliness is a subjective internal state, [where distress results] from the per
 Badcock et al. (2022, p. 3) distinguish social isolation from loneliness in that one may occur without the other.
 {{< /highlight >}}
 
-
+Poor social connectedness is impactful. The Surgeon General (p. 8) cites one study that found loneliness and social isolation increase the risk of premature death by 26% and 29% respectively. In comparison to smoking cigarettes daily, the lack of social connect "can increase the risk for premature death as much as smoking 15 cigarettes a day" (p. 3)
 
 <!--
 Our investments in these sources of social connectedness is called **social capital** by which we gain benefits from these relations commensurate with the effort that we put into them. 
@@ -53,9 +53,18 @@ Our investments in these sources of social connectedness is called **social capi
 
 U.S. Department of Health & Human Services. (2023). *Our epidemic of loneliness and isolation: The U.S. Surgeon General’s Advisory on the healing effects of social connection and community*. https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
 
+Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). Loneliness and social isolation as risk factors for mortality: A meta-analytic review. *Perspectives on Psychological Science: A Journal of the Association for Psychological Science*, 10(2), 227–237. https://doi.org/10.1177/1745691614568352
+<!-- (Holt-Lunstad et al., 2015) -->
+<!-- According to Holt-Lunstad et al. (2015) ... -->
+<!-- ... as demonstrated in the findings on loneliness (Holt-Lunstad et al., 2015). -->
+
+Holt-Lunstad, J., Robles, T. F., & Sbarra, D. A. (2017). Advancing social connection as a public health priority in the United States. *The American Psychologist*, 72(6), 517–530. https://doi.org/10.1037/amp0000103
+<!-- (Holt-Lunstad et al., 2017) -->
+<!-- According to Holt-Lunstad et al. (2017)... -->
+<!-- ... as discussed in the context of public health (Holt-Lunstad et al., 2017). -->
+
+
 <!--
-
-
 Smith, M. L., Racoosin, J., Wilkerson, R., Ivey, R. M., Hawkley, L., Holt-Lunstad, J., & Cudjoe, T. K. M. (2023). Societal- and community-level strategies to improve social connectedness among older adults. *Frontiers in public health*, 11, 1176895. [https://doi.org/10.3389/fpubh.2023.1176895](https://doi.org/10.3389/fpubh.2023.1176895)
 
 (Smith et al., 2023)[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10192856/]

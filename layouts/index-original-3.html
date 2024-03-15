@@ -1,6 +1,5 @@
 {{ define "main" }}
 <style>
-/*
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
@@ -23,30 +22,6 @@
   opacity: 0;
   visibility: hidden;
 }
-*/
-
-.splash {
-  transition: opacity 2s ease-out; /* Adjust time as needed */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2; /* Higher for splashScreen1, lower for splashScreen2 */
-}
-
-#splashScreen2 {
-  z-index: 1;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0s 2s, opacity 2s ease-out; /* Delay visibility transition */
-}
 </style>
 
 <!-- <div id="splashScreen" class="vh-100 vw-100 flex items-center justify-center bg-white  blue" style="position:fixed; top:0; left:0; z-index:9999;">
@@ -59,7 +34,6 @@
 
 <!-- Second Splash Screen -->
 <div id="splashScreen2" class="splash vh-100 vw-100 flex items-center justify-center bg-black white">
-  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa4" style="height: 2rem; width: auto;" src="/img/logo-v7.png" /></div>
   <div class="tc">
     <div class="f1 fw4 mb5 mh5">
       <div class="mv5 f-subheadline-white">It's important.</div>
@@ -73,7 +47,6 @@
 
 <!-- First Splash Screen -->
 <div id="splashScreen1" class="splash vh-100 vw-100 flex items-center justify-center bg-white white">
-  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa4" style="height: 2rem; width: auto;" src="/img/logo-v8.png" /></div>
   <div class="tc">
     <h2 class="f-subheadline-blue fw6">Did<br />you check-in<br/>with your parents<br \/>today?</h2>
   </div>  
@@ -109,29 +82,27 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    // Step 2: Fade out splashScreen1 at 6 seconds
+  function showSplashScreen2() {
     document.getElementById('splashScreen1').classList.add('hidden');
-    
     setTimeout(() => {
-      // Step 3: Immediately after fade, remove splashScreen1
       document.getElementById('splashScreen1').style.display = 'none';
-      
-      // Step 4 is implicit as splashScreen2 is now visible
-      
+      // document.getElementById('splashScreen2').style.display = 'flex';
       setTimeout(() => {
-        // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
         document.getElementById('splashScreen2').classList.add('hidden');
-        
-        setTimeout(() => {
-          // Step 6: Remove splashScreen2 from display
-          document.getElementById('splashScreen2').style.display = 'none';
-        }, 2000); // Ensure this matches the fade-out transition time
-      }, 8000); // Time until splashScreen2 starts to fade
-    }, 2000); // Transition time for splashScreen1 to fade out
-  }, 6000); // Time until splashScreen1 starts to fade
-});
+      }, 20); // Short delay to ensure the transition triggers
+    }, 10000); // Match the CSS transition time
+  }
+  
+  function hideSplashScreens() {
+    document.getElementById('splashScreen2').classList.add('hidden');
+    setTimeout(() => {
+      document.getElementById('splashScreen2').style.display = 'none';
+    }, 6000); // Match the CSS transition time
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(showSplashScreen2, 8000); // Time before showing the second splash screen
+  });
 </script>
   
 <main class="page-main pa4" role="main">

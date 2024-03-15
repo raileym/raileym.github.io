@@ -70,6 +70,15 @@
 .w-90 {  width:  90%; }
 .w-100 { width: 100%; }
 
+/* Screen Width Percentage */
+
+.vw-25 {  width:  25vw; }
+.vw-50 {  width:  50vw; }
+.vw-75 {  width:  75vw; }
+.vw-100 { width: 100vw; }
+
+.min-vh-100 { min-height: 100vh; }
+
 .w-third { width: (100% / 3); }
 .w-two-thirds { width: (100% / 1.5); }
 .w-auto { width: auto; }
@@ -97,6 +106,10 @@
   .w-third-ns { width: (100% / 3); }
   .w-two-thirds-ns { width: (100% / 1.5); }
   .w-auto-ns { width: auto; }
+  .vw-25-ns {  width:  25vw; }
+  .vw-50-ns {  width:  50vw; }
+  .vw-75-ns {  width:  75vw; }
+  .vw-100-ns { width: 100vw; }
 }
 
 @media #{$breakpoint-medium} {
@@ -122,6 +135,10 @@
   .w-third-m { width: (100% / 3); }
   .w-two-thirds-m { width: (100% / 1.5); }
   .w-auto-m {    width: auto; }
+  .vw-25-m {  width:  25vw; }
+  .vw-50-m {  width:  50vw; }
+  .vw-75-m {  width:  75vw; }
+  .vw-100-m { width: 100vw; }
 }
 
 @media #{$breakpoint-large} {
@@ -147,4 +164,8 @@
   .w-third-l { width: (100% / 3); }
   .w-two-thirds-l { width: (100% / 1.5); }
   .w-auto-l {    width: auto; }
+  .vw-25-l {  width:  25vw; }
+  .vw-50-l {  width:  50vw; }
+  .vw-75-l {  width:  75vw; }
+  .vw-100-l { width: 100vw; }
 }
