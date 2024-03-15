@@ -20,7 +20,7 @@ preserveTaxonomyNames = true
   orgName = "UCKN Social Network"
   # orgLocal = "Orlando, FL"
   favicon = "/img/favicon.ico?v=0"
-  logo = "/img/logo-v5.png"
+  logo = "/img/logo-v8.png"
   # logo = "/img/blogophonic-mark-dark.png"
   # font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
@@ -31,6 +31,9 @@ preserveTaxonomyNames = true
   siteBgColor = "near-white"
   sidebarBgColor = "light-gray"
   headlineColor = "red" # "dark-pink"
+  headlineColorBlue = "blue" # "dark-pink"
+  headlineColorWhite = "near-white"
+  headlineColorYellow = "yellow"
   headingColor = "near-black"
   textColor = "dark-gray"
   sidebarTextColor = "mid-gray"

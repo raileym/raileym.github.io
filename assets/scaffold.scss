@@ -8,6 +8,9 @@ $sidebarBgColor: {{ .Site.Params.sidebarBgColor | default "light-gray" }};
 $textColor: {{ .Site.Params.textColor | default "near-black" }};
 $sidebarTextColor: {{ .Site.Params.sidebarTextColor | default "dark-gray" }};
 $headlineColor: {{ .Site.Params.headlineColor | default "black" }};
+$headlineColorBlue: {{ .Site.Params.headlineColorBlue | default "black" }};
+$headlineColorWhite: {{ .Site.Params.headlineColorWhite | default "black" }};
+$headlineColorYellow: {{ .Site.Params.headlineColorYellow | default "black" }};
 $headingColor: {{ .Site.Params.headingColor | default "near-black" }};
 $bodyLinkColor: {{ .Site.Params.bodyLinkColor | default "blue" }};
 $navLinkColor: {{ .Site.Params.navLinkColor | default "near-black" }};
@@ -38,6 +41,30 @@ h1, h2, h3, h4, h5, h6 {
 
   &-ns, &-m, &-l {
     @extend .#{$headlineColor} ;
+  }
+}
+.f-headline-blue,
+.f-subheadline-blue {
+  @extend .#{$headlineColorBlue} ;
+
+  &-ns, &-m, &-l {
+    @extend .#{$headlineColorBlue} ;
+  }
+}
+.f-headline-white,
+.f-subheadline-white {
+  @extend .#{$headlineColorWhite} ;
+
+  &-ns, &-m, &-l {
+    @extend .#{$headlineColorWhite} ;
+  }
+}
+.f-headline-yellow,
+.f-subheadline-yellow {
+  @extend .#{$headlineColorYellow} ;
+
+  &-ns, &-m, &-l {
+    @extend .#{$headlineColorYellow} ;
   }
 }
 .site-brand,

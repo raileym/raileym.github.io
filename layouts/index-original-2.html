@@ -1,0 +1,74 @@
+{{ define "main" }}
+<style>
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+
+    .hidden {
+        animation: fadeOut 1s forwards;
+    }
+</style>
+
+<div id="splashScreen" class="vh-100 vw-100 flex items-center justify-center bg-white  blue" style="position:fixed; top:0; left:0; z-index:9999;">
+  <div id="content" class="tc">
+    <h2 id="question" class="f-subheadline-l f1 blue fw6 pa2"></h2>
+    <p id="followUp" class="f3 fw4 mt3 mb5 mh5 pa5XXX"></p>
+    <a href="#" id="moreInfo" class="f5 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" onclick="hideSplashScreen()">Click for more information</a>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = [
+    "Did<br />you check-in<br/>with your parents<br \/>today?",
+    "Have you spoken<br/>to an old friend recently?",
+    // "When was the last time you shared a meal with someone?",
+    // "Do you remember the last story you heard from a grandparent?",
+    // "Have you asked someone about their day today?"
+  ];
+
+  const followUps = [
+    "It's important. <br/><br/>Loneliness is a national epidemic: As many as 2 out 5 older adults have reported moderate to severe loneliness. <br/><br/>Check-in with someone today.",
+    "Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated.<br/><br/>Reconnect today.",
+    "Sharing moments matters. Social isolation can increase the risk of premature death.",
+    "Every story matters. Engaging with older adults reduces the risk of dementia for them.",
+    "Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease."
+  ];
+
+  let currentIndex = Math.floor(Math.random() * questions.length);
+
+  document.getElementById('question').innerHTML = questions[currentIndex];
+  document.getElementById('followUp').innerHTML = followUps[currentIndex];
+
+  setTimeout(() => {
+    document.getElementById('splashScreen').classList.add('hidden');
+    setTimeout(() => {
+      document.getElementById('splashScreen').style.display = 'none';
+    }, 1000); // Match the animation duration
+  }, 5000); // Adjust time as needed
+});
+
+function hideSplashScreen() {
+  document.getElementById('splashScreen').style.display = 'none';
+}
+</script>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw9 center">
+    <div class="flex flex-lXXX items-center">
+      <div class="baXX center w-80 mh5-lXXX w-50-lXXX">
+        <div class="tc">
+          {{ with .Params.feature }}
+            {{ range first 1 . }}<img class="mv0 w-60 w-70-m" src="{{ . }}"/>{{ end }}
+          {{ end }}
+        </div>
+        {{ with .Params.title }}<h1 class="tc f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">{{ . | safeHTML }}</h1>{{ end }}
+        {{ with .Params.subtitle }}<h2 class="tc f7 fw7 measureXXX mv0 ttu tracked">{{ . }}</h2>{{ end }}
+        {{ with .Params.description }}<div class="baXXX f4 measureXXX mv4 lh-copy black-50">{{ . | markdownify }}</div>{{ end }}
+        {{ if .Params.show_action_link }}<a class="action {{ .Params.action_type }}" href="{{ .Params.action_link }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
+      </div>
+    </div>      
+  </section>
+</main>
+{{ end }}
