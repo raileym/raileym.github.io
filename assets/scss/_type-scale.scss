@@ -53,6 +53,9 @@
 /* Type Scale */
 
 
+.f-c { font-size: $font-size-c; }
+.f-b { font-size: $font-size-b; }
+.f-a { font-size: $font-size-a; }
 .f1 { font-size: $font-size-1; }
 .f2 { font-size: $font-size-2; }
 .f3 { font-size: $font-size-3; }
@@ -64,6 +67,9 @@
 .f9 { font-size: $font-size-9; }
 
 @media #{$breakpoint-not-small}{
+  .f-c-ns { font-size: $font-size-c; }
+  .f-b-ns { font-size: $font-size-b; }
+  .f-a-ns { font-size: $font-size-a; }
   .f-6-ns,
   .f-headline-ns { font-size: $font-size-headline; }
   .f-5-ns,
@@ -83,6 +89,9 @@
 }
 
 @media #{$breakpoint-medium} {
+  .f-c-m { font-size: $font-size-c; }
+  .f-b-m { font-size: $font-size-b; }
+  .f-a-m { font-size: $font-size-a; }
   .f-6-m,
   .f-headline-m { font-size: $font-size-headline; }
   .f-5-m,
@@ -102,6 +111,9 @@
 }
 
 @media #{$breakpoint-large} {
+  .f-c-l { font-size: $font-size-c; }
+  .f-b-l { font-size: $font-size-b; }
+  .f-a-l { font-size: $font-size-a; }
   .f-6-l,
   .f-headline-l {
     font-size: $font-size-headline;
