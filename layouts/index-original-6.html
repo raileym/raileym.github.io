@@ -36,64 +36,63 @@ sup {
 <div id="splashScreen2" class="splash vh-100 vw-100 flex-column items-center justify-center bg-black white">
   <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-ns w-auto" src="/img/logo-v7.png" /></div>
   <div class="tc">
-    <div id="fact" class="f1XXX fw4XXX mb3XXX mb5-nsXXX mh5-nsXXX flex flex-column items-center vw-100"></div>
-    <div id="quip" class="f1XXX fw4XXX mb3XXX mb5-nsXXX mh5-nsXXX flex flex-column items-center vw-100"></div>
-    <a href="#" class="link dim br3 ph3 pv2 mb2XXX mt3 mt5-ns f3 f2-ns dib white bg-dark-blue" onclick="hideSplashScreens()">Learn more</a>
-    <!-- <a href="#" class="link dim br3 ph3 pv2 mb2 dib f5 f3-ns white bg-dark-blue" onclick="hideSplashScreens()">Learn more</a> -->
+    <div id="fact" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center vw-100"></div>
+    <div id="quip" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center vw-100"></div>
+    <a href="#" class="f5 f3-ns link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" onclick="hideSplashScreens()">Learn more</a>
   </div>
 </div>
 
 <!-- First Splash Screen -->
-<div id="splashScreen1" class="splash vh-100 vw-100 flex items-center bg-white">
+<div id="splashScreen1" class="splash vh-100 vw-100 flex items-center justify-center bg-white white">
   <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-ns w-auto" src="/img/logo-v8.png" /></div>
-  <div id="question" class="flex flex-column items-center vw-100"></div>  
+  <div id="question" class="tc flex-column vw-100"></div>  
 </div>  
 
 <script>
 const formatQuestion = ({question}) => {
   return `
-    <div class="f1 w-90 f-c-ns w-70-ns tc blue b f2XXX centerXXX mh3XXX f-subheadline-blue-lXXX fw6XXX w-90XXX">${question}</div>
+    <h2 class="f2 center f1-ns mh3 f-subheadline-blue-l fw6 w-90">${question}</h2>
   `
 }
 
 const formatFact = ({fact}) => {
   return `
-    <div class="w-90XXX pb4 f2 f-c-ns b">It's important.</div>
-    <div class="w-90XXX mv3-ns pb4 pt3 f3 f1-ns">Loneliness is<br/>a national epidemic.</div>
-    <div class="w-80 w-70-ns pb4 pt3 yellow f3 f1-ns center">${fact}</div>
+    <div class="w-90 white mv4 mv4-m mv5-ns f3 f1-ns f-subheadline-white-nsXXX">It's important.</div>
+    <div class="w-90 white mv3 mv4-m mv5-ns f4 f1-ns f-subheadline-white-nsXXX">Loneliness is<br/>a national epidemic<sup>1</sup>.</div>
+    <div class="w-90 mv3 yellow mv4-m mv5-ns f4 f1-ns f-subheadline-yellow-nsXXX center">${fact}</div>
   `
 }
 
 const formatQuip = ({quip}) => {
   return `
-    <div class="mv3-ns pb4 pt3 f3 f1-ns">${quip}</div>
+    <div class="w-90 mb4 white mb4-m mb5-l f4 f1-ns f-subheadline-white-nsXXX">${quip}</div>
   `
 }
 
 const splashContent = [
   {
     question: formatQuestion({question:'Did<br />you check-in<br/>with your parents<br />today?'}),
-    fact: formatFact({fact:'As many as 2 out 5 older adults have reported moderate to severe loneliness.'}),
+    fact: formatFact({fact:'As many as 2 out 5 older adults have reported moderate to severe loneliness<sup>2</sup>.'}),
     quip: formatQuip({quip:'Check-in with<br/>someone today.'})
   },
   {
     question: formatQuestion({question:'Have you spoken<br/>to an old friend recently?'}),
-    fact: formatFact({fact:'Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated.'}),
+    fact: formatFact({fact:'Reconnecting can make a big difference. Nearly 1 in 4 adults aged 65 and older are considered socially isolated<sup>3</sup>.'}),
     quip: formatQuip({quip:'Reconnect today.'})
   },
   {
     question: formatQuestion({question:'When was the last time you shared a meal with someone?'}),
-    fact: formatFact({fact:'Sharing moments matters. Social isolation can increase the risk of premature death.'}),
+    fact: formatFact({fact:'Sharing moments matters. Social isolation can increase the risk of premature death<sup>4</sup>.'}),
     quip: formatQuip({quip:'Share a meal today.'})
   },
   {
     question: formatQuestion({question:'Do you remember the last story you heard from a grandparent?'}),
-    fact: formatFact({fact:'Every story matters. Engaging with older adults reduces their risk of dementia.'}),
+    fact: formatFact({fact:'Every story matters. Engaging with older adults reduces their risk of dementia<sup>5</sup>.'}),
     quip: formatQuip({quip:'Share a story today.'})
   },
   {
     question: formatQuestion({question:'Have you asked someone about their day today?'}),
-    fact: formatFact({fact:'Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease.'}),
+    fact: formatFact({fact:'Simple questions can mean a lot. Feeling isolated can lead to severe health risks, including depression, dementia, and heart disease<sup>6</sup>.'}),
     quip: formatQuip({quip:'Ask a question today.'})
   },
 ];
@@ -111,44 +110,44 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('fact').innerHTML = content.fact;
   document.getElementById('quip').innerHTML = content.quip;
 
-  // document.getElementById('splashScreen1').style.display = 'none';
+  document.getElementById('splashScreen1').style.display = 'none';
   // document.getElementById('splashScreen2').style.display = 'none';
-  setTimeout(() => {
-    // Step 2: Fade out splashScreen1 at 6 seconds
-    document.getElementById('splashScreen1').classList.add('hidden');
+//   setTimeout(() => {
+//     // Step 2: Fade out splashScreen1 at 6 seconds
+//     document.getElementById('splashScreen1').classList.add('hidden');
     
-    setTimeout(() => {
-      // Step 3: Immediately after fade, remove splashScreen1
-      document.getElementById('splashScreen1').style.display = 'none';
+//     setTimeout(() => {
+//       // Step 3: Immediately after fade, remove splashScreen1
+//       document.getElementById('splashScreen1').style.display = 'none';
       
-      // Step 4 is implicit as splashScreen2 is now visible
+//       // Step 4 is implicit as splashScreen2 is now visible
       
-      setTimeout(() => {
-        // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
-        document.getElementById('splashScreen2').classList.add('hidden');
+//       setTimeout(() => {
+//         // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
+//         document.getElementById('splashScreen2').classList.add('hidden');
         
-        setTimeout(() => {
-          // Step 6: Remove splashScreen2 from display
-          document.getElementById('splashScreen2').style.display = 'none';
-        }, 2000); // Ensure this matches the fade-out transition time
-      }, 8000); // Time until splashScreen2 starts to fade
-    }, 2000); // Transition time for splashScreen1 to fade out
-  }, 6000); // Time until splashScreen1 starts to fade
+//         setTimeout(() => {
+//           // Step 6: Remove splashScreen2 from display
+//           document.getElementById('splashScreen2').style.display = 'none';
+//         }, 2000); // Ensure this matches the fade-out transition time
+//       }, 8000); // Time until splashScreen2 starts to fade
+//     }, 2000); // Transition time for splashScreen1 to fade out
+//   }, 6000); // Time until splashScreen1 starts to fade
 });
 </script>
   
 <main class="page-main pa4" role="main">
-  <section class="page-content mw9 centerXXX">
+  <section class="page-content mw9 center">
     <div class="flex flex-lXXX items-center">
-      <div class="flex flex-column items-center center baXX w-80XXX mh5-lXXX w-50-lXXX">
+      <div class="baXX center w-80 mh5-lXXX w-50-lXXX">
         <div class="tc">
           {{ with .Params.feature }}
             {{ range first 1 . }}<img class="mv0 w-60 w-70-m" src="{{ . }}"/>{{ end }}
           {{ end }}
         </div>
         {{ with .Params.title }}<h1 class="tc f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">{{ . | safeHTML }}</h1>{{ end }}
-        {{ with .Params.subtitle }}<h2 class="tc f7 f4-ns fw7 measureXXX mv0 ttu tracked">{{ . }}</h2>{{ end }}
-        {{ with .Params.description }}<div class="baXXX f4 w-100 w-80-ns measureXXX mv4 lh-copy black-50">{{ . | markdownify }}</div>{{ end }}
+        {{ with .Params.subtitle }}<h2 class="tc f7 fw7 measureXXX mv0 ttu tracked">{{ . }}</h2>{{ end }}
+        {{ with .Params.description }}<div class="baXXX f4 measureXXX mv4 lh-copy black-50">{{ . | markdownify }}</div>{{ end }}
         {{ if .Params.show_action_link }}<a class="action {{ .Params.action_type }}" href="{{ .Params.action_link }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
       </div>
     </div>      
