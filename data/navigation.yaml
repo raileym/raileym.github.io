@@ -8,26 +8,13 @@ header:
   - name: Blog
     title: Blog
     url: /blog/
-  - name: Merchandise
-    title: Merchandise
-    url: /merchandise/
-  # - name: Contact
-  #   title: Contact Form
-  #   url: /contact/
-  # - name: Elements
-  #   title: Element Page
-  #   url: /elements/
-
-footer:
-  # - name: Help
-  #   title: Visit Help Site
-  #   url: https://help.formspree.io
-  # - name: Privacy
-  #   title: Privacy Policy
-  #   url: https://help.formspree.io
-  # - name: Terms of Use
-  #   title: Terms and Conditions
-  #   url: https://help.formspree.io
-  # - name: RSS
-  #   title: RSS Feed
-  #   url: /index.xml
+    # submenu:
+    #   - name: Statistics
+    #     title: Statistics
+    #     url: /statistics/
+    #   - name: Submenu2
+    #     title: Submenu 2 Title
+    #     url: /more/submenu2/
+    #   - name: Merchandise
+    #     title: Merchandise
+    #     url: /Merchandise/

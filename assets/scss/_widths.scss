@@ -47,6 +47,8 @@
 
   */
 
+.w-auto { width: auto;}
+
 /* Width Scale */
 
 .w1 {    width: $width-1; }
@@ -110,6 +112,7 @@
   .vw-50-ns {  width:  50vw; }
   .vw-75-ns {  width:  75vw; }
   .vw-100-ns { width: 100vw; }
+  .w-auto-ns { width: auto;}
 }
 
 @media #{$breakpoint-medium} {
@@ -139,6 +142,7 @@
   .vw-50-m {  width:  50vw; }
   .vw-75-m {  width:  75vw; }
   .vw-100-m { width: 100vw; }
+  .w-auto-m { width: auto;}
 }
 
 @media #{$breakpoint-large} {
@@ -168,4 +172,5 @@
   .vw-50-l {  width:  50vw; }
   .vw-75-l {  width:  75vw; }
   .vw-100-l { width: 100vw; }
+  .w-auto-l { width: auto;}
 }
