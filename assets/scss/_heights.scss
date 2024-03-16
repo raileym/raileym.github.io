@@ -38,6 +38,10 @@
 
 */
 
+.ht-1  { height: 1rem; }
+.ht-15 { height: 1.5rem; }
+.ht-2  { height: 2rem; }
+
 /* Height Scale */
 
 .h1 { height: $height-1; }
@@ -91,7 +95,10 @@
   .min-vh-100-ns { min-height: 100vh; }
   .h-auto-ns { height: auto; }
   .h-inherit-ns { height: inherit; }
-}
+  .ht-1-ns  { height: 1rem; }
+  .ht-15-ns { height: 1.5rem; }
+  .ht-2-ns  { height: 2rem; }
+  }
 
 @media #{$breakpoint-medium} {
   .h1-m { height: $height-1; }
@@ -111,6 +118,9 @@
   .min-vh-100-m { min-height: 100vh; }
   .h-auto-m { height: auto; }
   .h-inherit-m { height: inherit; }
+  .ht-1-m  { height: 1rem; }
+  .ht-15-m { height: 1.5rem; }
+  .ht-2-m  { height: 2rem; }
 }
 
 @media #{$breakpoint-large} {
@@ -131,4 +141,7 @@
   .min-vh-100-l { min-height: 100vh; }
   .h-auto-l { height: auto; }
   .h-inherit-l { height: inherit; }
+  .ht-1-l  { height: 1rem; }
+  .ht-15-l { height: 1.5rem; }
+  .ht-2-l  { height: 2rem; }
 }

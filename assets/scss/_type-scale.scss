@@ -60,12 +60,17 @@
 .f5 { font-size: $font-size-5; }
 .f6 { font-size: $font-size-6; }
 .f7 { font-size: $font-size-7; }
+.f8 { font-size: $font-size-8; }
+.f9 { font-size: $font-size-9; }
 
 @media #{$breakpoint-not-small}{
   .f-6-ns,
   .f-headline-ns { font-size: $font-size-headline; }
   .f-5-ns,
   .f-subheadline-ns { font-size: $font-size-subheadline; }
+  .f-subheadline-blue-ns { font-size: $font-size-subheadline; }
+  .f-subheadline-white-ns { font-size: $font-size-subheadline; }
+  .f-subheadline-yellow-ns { font-size: $font-size-subheadline; }
   .f1-ns { font-size: $font-size-1; }
   .f2-ns { font-size: $font-size-2; }
   .f3-ns { font-size: $font-size-3; }
@@ -73,6 +78,8 @@
   .f5-ns { font-size: $font-size-5; }
   .f6-ns { font-size: $font-size-6; }
   .f7-ns { font-size: $font-size-7; }
+  .f8-ns { font-size: $font-size-8; }
+  .f9-ns { font-size: $font-size-9; }
 }
 
 @media #{$breakpoint-medium} {
@@ -80,6 +87,9 @@
   .f-headline-m { font-size: $font-size-headline; }
   .f-5-m,
   .f-subheadline-m { font-size: $font-size-subheadline; }
+  .f-subheadline-blue-m { font-size: $font-size-subheadline; }
+  .f-subheadline-white-m { font-size: $font-size-subheadline; }
+  .f-subheadline-yellow-m { font-size: $font-size-subheadline; }
   .f1-m { font-size: $font-size-1; }
   .f2-m { font-size: $font-size-2; }
   .f3-m { font-size: $font-size-3; }
@@ -87,6 +97,8 @@
   .f5-m { font-size: $font-size-5; }
   .f6-m { font-size: $font-size-6; }
   .f7-m { font-size: $font-size-7; }
+  .f8-m { font-size: $font-size-8; }
+  .f9-m { font-size: $font-size-9; }
 }
 
 @media #{$breakpoint-large} {
@@ -98,6 +110,9 @@
   .f-subheadline-l {
     font-size: $font-size-subheadline;
   }
+  .f-subheadline-blue-l { font-size: $font-size-subheadline; }
+  .f-subheadline-white-l { font-size: $font-size-subheadline; }
+  .f-subheadline-yellow-l { font-size: $font-size-subheadline; }
   .f1-l { font-size: $font-size-1; }
   .f2-l { font-size: $font-size-2; }
   .f3-l { font-size: $font-size-3; }
@@ -105,4 +120,6 @@
   .f5-l { font-size: $font-size-5; }
   .f6-l { font-size: $font-size-6; }
   .f7-l { font-size: $font-size-7; }
+  .f8-l { font-size: $font-size-8; }
+  .f9-l { font-size: $font-size-9; }
 }
