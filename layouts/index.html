@@ -56,18 +56,18 @@ sup {
 
 <!-- Second Splash Screen -->
 <div id="splashScreen2" class="splash vh-100 vw-100 flex-column items-center justify-center bg-black white">
-  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-l w-auto" src="/img/logo-v7.png" /></div>
+  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-ns w-auto" src="/img/logo-v7.png" /></div>
   <div class="tc">
-    <div id="fact" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center w-100"></div>
-    <div id="quip" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center w-100"></div>
-    <a href="#" class="f5 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" onclick="hideSplashScreens()">Learn more</a>
+    <div id="fact" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center vw-100"></div>
+    <div id="quip" class="f1 fw4 mb3 mb5-ns mh5-ns flex flex-column items-center vw-100"></div>
+    <a href="#" class="f5 f3-ns link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" onclick="hideSplashScreens()">Learn more</a>
   </div>
 </div>
 
 <!-- First Splash Screen -->
 <div id="splashScreen1" class="splash vh-100 vw-100 flex items-center justify-center bg-white white">
-  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-l w-auto" src="/img/logo-v8.png" /></div>
-  <div id="question" class="tc flex-column w-100"></div>  
+  <div class="fixed" style="top: 0rem; left: 0rem;"><img class="pa3 pa4-ns ht-1 ht-2-ns w-auto" src="/img/logo-v8.png" /></div>
+  <div id="question" class="tc flex-column vw-100"></div>  
 </div>  
 
 <script>
@@ -79,15 +79,15 @@ const formatQuestion = ({question}) => {
 
 const formatFact = ({fact}) => {
   return `
-    <div class="w-90 white mv4 mv4-m mv5-ns f3 f-subheadline-white-nsXXX">It's important.</div>
-    <div class="w-90 white mv3 mv4-m mv5-ns f4 f-subheadline-white-nsXXX">Loneliness is<br/>a national epidemic<sup>1</sup>.</div>
-    <div class="w-90 mv3 yellow mv4-m mv5-ns f4 f-subheadline-yellow-nsXXX center">${fact}</div>
+    <div class="w-90 white mv4 mv4-m mv5-ns f3 f1-ns f-subheadline-white-nsXXX">It's important.</div>
+    <div class="w-90 white mv3 mv4-m mv5-ns f4 f1-ns f-subheadline-white-nsXXX">Loneliness is<br/>a national epidemic<sup>1</sup>.</div>
+    <div class="w-90 mv3 yellow mv4-m mv5-ns f4 f1-ns f-subheadline-yellow-nsXXX center">${fact}</div>
     `
 }
 
 const formatQuip = ({quip}) => {
   return `
-    <div class="w-90 mb4 white mb4-m mb5-l f4 f-subheadline-white-nsXXX">${quip}</div>
+    <div class="w-90 mb4 white mb4-m mb5-l f4 f1-ns f-subheadline-white-nsXXX">${quip}</div>
     `
 }
 
@@ -152,29 +152,29 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('fact').innerHTML = content.fact;
   document.getElementById('quip').innerHTML = content.quip;
 
-  // document.getElementById('splashScreen1').style.display = 'none';
+  document.getElementById('splashScreen1').style.display = 'none';
   // document.getElementById('splashScreen2').style.display = 'none';
-  setTimeout(() => {
-    // Step 2: Fade out splashScreen1 at 6 seconds
-    document.getElementById('splashScreen1').classList.add('hidden');
+  // setTimeout(() => {
+  //   // Step 2: Fade out splashScreen1 at 6 seconds
+  //   document.getElementById('splashScreen1').classList.add('hidden');
     
-    setTimeout(() => {
-      // Step 3: Immediately after fade, remove splashScreen1
-      document.getElementById('splashScreen1').style.display = 'none';
+  //   setTimeout(() => {
+  //     // Step 3: Immediately after fade, remove splashScreen1
+  //     document.getElementById('splashScreen1').style.display = 'none';
       
-      // Step 4 is implicit as splashScreen2 is now visible
+  //     // Step 4 is implicit as splashScreen2 is now visible
       
-      setTimeout(() => {
-        // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
-        document.getElementById('splashScreen2').classList.add('hidden');
+  //     setTimeout(() => {
+  //       // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
+  //       document.getElementById('splashScreen2').classList.add('hidden');
         
-        setTimeout(() => {
-          // Step 6: Remove splashScreen2 from display
-          document.getElementById('splashScreen2').style.display = 'none';
-        }, 2000); // Ensure this matches the fade-out transition time
-      }, 8000); // Time until splashScreen2 starts to fade
-    }, 2000); // Transition time for splashScreen1 to fade out
-  }, 6000); // Time until splashScreen1 starts to fade
+  //       setTimeout(() => {
+  //         // Step 6: Remove splashScreen2 from display
+  //         document.getElementById('splashScreen2').style.display = 'none';
+  //       }, 2000); // Ensure this matches the fade-out transition time
+  //     }, 8000); // Time until splashScreen2 starts to fade
+  //   }, 2000); // Transition time for splashScreen1 to fade out
+  // }, 6000); // Time until splashScreen1 starts to fade
 });
 </script>
   
