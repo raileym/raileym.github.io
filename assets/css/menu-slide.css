@@ -1,0 +1,39 @@
+/* Additional styles */
+
+/* Sliding Sitemap/Menu Container */
+.site-map-container {
+  right: -100%;
+  /* right: 0%; */
+  transition: right 0.8s ease;
+  /* z-index: 10; */
+}
+
+.site-map-header {
+  right: -100%;
+  /* right: 0%; */
+  transition: right 0.8s ease;
+  z-index: 10;
+}
+
+.site-map-header.show,
+.site-map-container.show {
+  right: 0;
+}
+
+.page-mask {
+  opacity: 0; /* Start fully transparent */
+  z-index: 1; /* Ensure this is less than your menu's z-index to appear below */
+  pointer-events: none; /* Prevents click events when mask is invisible */
+  transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+}
+
+.page-mask.show {
+  display: block;
+  opacity: 1; /* Fully visible */
+  pointer-events: auto; /* Allow click events when mask is visible */
+}
+
+.close-hamburger {
+  z-index: 101; /* Ensure this is higher than the slide-in panel's z-index */
+  display: none; /* Hidden by default */
+}

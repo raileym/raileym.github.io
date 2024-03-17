@@ -8,6 +8,9 @@ header:
   - name: Blog
     title: Blog
     url: /blog/
+  - name: Research
+    title: Research
+    url: /research/
     # submenu:
     #   - name: Statistics
     #     title: Statistics

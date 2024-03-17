@@ -111,29 +111,29 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('fact').innerHTML = content.fact;
   document.getElementById('quip').innerHTML = content.quip;
 
-  // document.getElementById('splashScreen1').style.display = 'none';
-  // document.getElementById('splashScreen2').style.display = 'none';
-  setTimeout(() => {
-    // Step 2: Fade out splashScreen1 at 6 seconds
-    document.getElementById('splashScreen1').classList.add('hidden');
+  document.getElementById('splashScreen1').style.display = 'none';
+  document.getElementById('splashScreen2').style.display = 'none';
+  // setTimeout(() => {
+  //   // Step 2: Fade out splashScreen1 at 6 seconds
+  //   document.getElementById('splashScreen1').classList.add('hidden');
     
-    setTimeout(() => {
-      // Step 3: Immediately after fade, remove splashScreen1
-      document.getElementById('splashScreen1').style.display = 'none';
+  //   setTimeout(() => {
+  //     // Step 3: Immediately after fade, remove splashScreen1
+  //     document.getElementById('splashScreen1').style.display = 'none';
       
-      // Step 4 is implicit as splashScreen2 is now visible
+  //     // Step 4 is implicit as splashScreen2 is now visible
       
-      setTimeout(() => {
-        // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
-        document.getElementById('splashScreen2').classList.add('hidden');
+  //     setTimeout(() => {
+  //       // Step 5: Fade out splashScreen2 at 8 seconds after splashScreen1 starts fading
+  //       document.getElementById('splashScreen2').classList.add('hidden');
         
-        setTimeout(() => {
-          // Step 6: Remove splashScreen2 from display
-          document.getElementById('splashScreen2').style.display = 'none';
-        }, 2000); // Ensure this matches the fade-out transition time
-      }, 8000); // Time until splashScreen2 starts to fade
-    }, 2000); // Transition time for splashScreen1 to fade out
-  }, 6000); // Time until splashScreen1 starts to fade
+  //       setTimeout(() => {
+  //         // Step 6: Remove splashScreen2 from display
+  //         document.getElementById('splashScreen2').style.display = 'none';
+  //       }, 2000); // Ensure this matches the fade-out transition time
+  //     }, 8000); // Time until splashScreen2 starts to fade
+  //   }, 2000); // Transition time for splashScreen1 to fade out
+  // }, 6000); // Time until splashScreen1 starts to fade
 });
 </script>
   

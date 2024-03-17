@@ -1,23 +1,9 @@
 <header class="site-header pa4 bb b--transparent" role="banner">
-  <nav class="site-nav db dt-l w-100" role="nav">
-    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="{{ .Site.BaseURL }}" title="Home">
-      {{ if .Site.Params.logo }}
-      <img style="height:2em;" src="{{ .Site.Params.logo }}" class="dib db-l h2 w-auto" alt="{{ .Site.Title }}">
-      {{ else }}
-      <span class="f4 fw7">{{ .Site.Title }}</span>
-      {{ end }}
-    </a>
+  <nav class="site-nav db dt-l w-100 dn-es mt4 pt1" role="nav">
     <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l">
       {{ range $.Site.Data.navigation.header }}
       <div class="dib">
         <a class="link f5 f3-ns dib pv1 ph2" href="{{ .url }}" title="{{ .title }}">{{ .name }}</a>
-        {{ if .submenu }}
-        <div class="submenu pa2">
-          {{ range .submenu }}
-          <a class="link f7 f6-l dib pv1 ph2" href="{{ .url }}" title="{{ .title }}">{{ .name }}</a>
-          {{ end }}
-        </div>
-        {{ end }}
       </div>
       {{ end }}
       {{ if .Site.Params.socialInHeader }}
@@ -27,4 +13,40 @@
       {{ end }}
     </div>
   </nav>
+  <div class="site-header-fixed baXXX fixed flex flex-row items-center top-0 left-0 wv-100XXX w-100 bg-white h3">
+    <a class="site-brand pa4 fixedXXX dbXXX dtc-lXXX v-midXXX link no-underline w-100 w-33-lXXX tl tcXXX tl-lXXX" href="{{ .Site.BaseURL }}" title="Home">
+      {{ if .Site.Params.logo }}
+      <img src="{{ .Site.Params.logo }}" class="dib db-l ht-15 ht-2-ns w-auto" alt="{{ .Site.Title }}">
+      {{ else }}
+      <span class="f4 fw7">{{ .Site.Title }}</span>
+      {{ end }}
+    </a>
+    <!-- pointer fixedXXX top-0XXX right-0XXX pa4 fs-15 fs-2-ns fas fa-bars blue -->
+    <i id="hamburgerBtn" class="fas fa-bars pa4 top-0XXX right-0XXX fixedXXX z-4 fs-15 fs-2-ns blue dnXXX"></i>
+  </div>
 </header>
+<!-- Sliding Sitemap/Menu Container -->
+<!-- <i id="closeHamburger" class="close-hamburger fixed top-0 right-0 pa4 fs-15 fs-2-ns fas fa-bars blue pointer"></i> -->
+<!-- <div id="siteMapHeader" class="site-map-header fixed flex flex-row items-center top-0 left-0XXX wv-100XXX w-100 bg-white h3">
+  <i id="closeHamburger" class="pointer fixedXXX top-0XXX right-0XXX pa4 fs-15 fs-2-ns fas fa-bars blue tr"></i>
+</div> -->
+<!-- site-map-container fixed top-0 bg-white w-70 h-100 -->
+<div id="siteMap" class="site-map-container bl b--redXXX fixed top-0 right-0XXX w-70 h-100 bg-white z-2 dnXXX">
+  <!-- <h2>Sitemap</h2> -->
+  <div class="pa3 mt4">
+    <!-- Add your organized list of items here -->
+    <ul>
+      <li class="mb2"><a href="/" class="smooth-transition">Home</a></li>
+      <li class="mb2"><a href="/about/" class="smooth-transition">About</a></li>
+      <li class="mb2"><a href="/blog/" class="smooth-transition">Blog</a></li>
+      <li class="mb2"><a href="/research/" class="smooth-transition">Research</a></li>
+      <!-- More links -->
+    </ul>
+  </div>
+  <!-- ba site-map-header fixed flex items-center top-0 left-0XXX w-70 bg-white h3 bg-transparent -->
+  <div id="siteMapHeader" class="baXXX b--redXXX bl site-map-header fixed flex items-center top-0 right-0XXX w-70 h3 bg-white z-2 dnXXX">
+    <div class="baXXX ph4 blue fs-15 bg-greenXXX">Sitemap</div>
+    <!-- pointer fas fa-bars blue pa4 fs-15 fs-2-ns tr ml-auto -->
+    <i id="closeHamburger" class="pointer fas fa-bars pa4 top-0XXX right-1XXX fixedXXX z-5 blue dnXXX fs-15 fs-2-ns ml-auto tr"></i>
+  </div>
+</div>

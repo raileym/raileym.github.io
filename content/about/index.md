@@ -4,11 +4,13 @@ description: A blog template for Hugo developed by Formspree and available for f
 date: 2019-02-19T14:47:22-06:00
 draft: false
 feature:
-  image: "/about/assets/transistor-sign-up.png"
-  class: "tc w-80"
-feature_class: "tc"
+- /about/assets/transistor-sign-up.png
+feature-style: "tc"
+feature-source:
+- Illustration by <a href="https://icons8.com/illustrations/author/lZpGtGw5182N">Elisabet Guba</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
 show_title_as_headline: true
-layout: standard
+feature-img-style: w-50
+layout: single-feature # standard
 ---
 
 ### I've never met a stranger.
