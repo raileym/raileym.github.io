@@ -137,6 +137,7 @@ $washed-red: #ffdfdf !default;
 
 // Custom Media Query Variables
 
+$breakpoint-extra-small: 'screen and (max-width: 20em)' !default;
 $breakpoint-not-small: 'screen and (min-width: 30em)' !default;
 $breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
 $breakpoint-large: 'screen and (min-width: 60em)' !default;

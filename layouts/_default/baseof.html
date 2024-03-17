@@ -2,10 +2,88 @@
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
     {{- partial "head.html" . -}}
     <body>
+      <!-- page-mask fixed top-0 left-0 w-100 h-100 bg-black-50 -->
+      <div id="pageMask" class="page-mask fixed top-0 left-0XXX w-100 h-100 bg-black-50"></div>
       <div class="grid-container{{ if .Params.layout }} {{ .Params.layout }}{{ end }}{{ if .IsHome }} home{{ end }}">
         {{- block "header" . }}{{- partial "header.html" . -}}{{- end }}
         {{- block "main" . }}{{- end }}
         {{- block "footer" . }}{{- partial "footer.html" . -}}{{- end }}
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Toggle panel and mask on clicking the original hamburger button
+          document.getElementById('hamburgerBtn').addEventListener('click', function() {
+              document.getElementById('siteMap').classList.add('show');
+              document.getElementById('siteMapHeader').classList.add('show');
+              document.getElementById('pageMask').classList.add('show');
+              document.getElementById('closeHamburger').classList.add('show');
+          });
+
+          // Hide panel, mask, and closeHamburger when closeBtn inside the panel is clicked
+          document.getElementById('closeHamburger').addEventListener('click', function() {
+              document.getElementById('siteMap').classList.remove('show');
+              document.getElementById('siteMapHeader').classList.remove('show');
+              document.getElementById('pageMask').classList.remove('show');
+              document.getElementById('closeHamburger').classList.remove('show');
+          });
+
+          // Also hide the mask, menu, and closeHamburger when the mask is clicked
+          document.getElementById('pageMask').addEventListener('click', function() {
+              document.getElementById('siteMap').classList.remove('show');
+              document.getElementById('siteMapHeader').classList.remove('show');
+              document.getElementById('pageMask').classList.remove('show');
+              document.getElementById('closeHamburger').classList.remove('show');
+          });
+
+          // Additionally, handling the click on the closeHamburger to hide panel, mask, and itself
+          document.getElementById('closeHamburger').addEventListener('click', function() {
+              document.getElementById('siteMap').classList.remove('show');
+              document.getElementById('siteMapHeader').classList.remove('show');
+              document.getElementById('pageMask').classList.remove('show');
+              document.getElementById('closeHamburger').classList.remove('show');
+          });
+        });
+      </script>        
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const headerDiv = document.querySelector('.site-header-fixed'); // Ensure this matches your element
+
+          window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Always add the shadow when scrolled down
+            if (currentScroll > 0) {
+                headerDiv.classList.add('shadow-2');
+            } else {
+                // Remove the shadow only when at the top
+                headerDiv.classList.remove('shadow-2');
+            }
+          }, false);
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Function to handle the fade-out and navigation
+          function handleLinkClick(e) {
+            e.preventDefault(); // Prevent default link behavior
+            const targetUrl = e.currentTarget.href; // Get the href value
+
+            // Fade out the sliding panel or entire page content
+            document.getElementById('siteMapHeader').classList.remove('show');
+            document.getElementById('siteMap').classList.remove('show');
+            document.getElementById('pageMask').classList.remove('show');
+            
+            setTimeout(() => {
+              window.location.href = targetUrl; // Navigate after the fade-out
+            }, 300); // Adjust delay to match your CSS animation
+          }
+
+          // Attach the event listener to all links with the smooth-transition class
+          document.querySelectorAll('.smooth-transition').forEach(link => {
+            link.addEventListener('click', handleLinkClick);
+          });
+        });
+
+      </script>
     </body>
 </html>
